@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conversational UI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <section class="chat-container">
+        <div class="conversation">
+            <div class="chat-message">
+                <span class="chat-message__avatar-frame">
+                <img src="https://img.favpng.com/13/25/17/user-silhouette-png-favpng-YqJcrKvJQHL2wGemK2EvGfk26.jpg" alt="avatar" class="chat-message__avatar">
+              </span>
+                <p class="chat-message__text">Hi!</p>
+            </div>
+            <div data-type="BOT_RESPONSE_quickReplies" data-bot="true" class="message">
+                <div class="bot-response quick-replies">
+                    <!-- <div class="chat-message">
+                        <span class="chat-message__avatar-frame">
+                        <img src="https://img.favpng.com/13/25/17/user-silhouette-png-favpng-YqJcrKvJQHL2wGemK2EvGfk26.jpg" alt="avatar" class="chat-message__avatar">
+                      </span>
+                        <p class="chat-message__text">Hi!</p>
+                    </div> -->
+                    <div class="quick-replies-buttons">
+                        <div data-conversation-quick-reply-title="⚡️ Free trial" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚡️ Free trial</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💲 Pricing" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💲 Pricing</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🧑‍💻 Contact Sales" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🧑‍💻 Contact Sales</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💡 About ChatBot" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💡 About ChatBot</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🚀 Features" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🚀 Features</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="⚙️  Integrations" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚙️  Integrations</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🤝 Partner Program" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🤝 Partner Program</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="📩  Contact us" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>📩  Contact us</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div data-type="BOT_RESPONSE_quickReplies" data-bot="true" class="message">
+                <div class="bot-response quick-replies">
+                    <!-- <div class="chat-message">
+                        <span class="chat-message__avatar-frame">
+                        <img src="https://img.favpng.com/13/25/17/user-silhouette-png-favpng-YqJcrKvJQHL2wGemK2EvGfk26.jpg" alt="avatar" class="chat-message__avatar">
+                      </span>
+                        <p class="chat-message__text">Hi!</p>
+                    </div> -->
+                    <div class="quick-replies-buttons">
+                        <div data-conversation-quick-reply-title="⚡️ Free trial" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚡️ Free trial</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💲 Pricing" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💲 Pricing</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🧑‍💻 Contact Sales" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🧑‍💻 Contact Sales</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💡 About ChatBot" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💡 About ChatBot</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🚀 Features" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🚀 Features</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="⚙️  Integrations" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚙️  Integrations</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🤝 Partner Program" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🤝 Partner Program</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="📩  Contact us" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>📩  Contact us</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div data-type="BOT_RESPONSE_quickReplies" data-bot="true" class="message">
+                <div class="bot-response quick-replies">
+                    <!-- <div class="chat-message">
+                        <span class="chat-message__avatar-frame">
+                        <img src="https://img.favpng.com/13/25/17/user-silhouette-png-favpng-YqJcrKvJQHL2wGemK2EvGfk26.jpg" alt="avatar" class="chat-message__avatar">
+                      </span>
+                        <p class="chat-message__text">Hi!</p>
+                    </div> -->
+                    <div class="quick-replies-buttons">
+                        <div data-conversation-quick-reply-title="⚡️ Free trial" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚡️ Free trial</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💲 Pricing" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💲 Pricing</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🧑‍💻 Contact Sales" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🧑‍💻 Contact Sales</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💡 About ChatBot" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💡 About ChatBot</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🚀 Features" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🚀 Features</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="⚙️  Integrations" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚙️  Integrations</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🤝 Partner Program" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🤝 Partner Program</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="📩  Contact us" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>📩  Contact us</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div data-type="BOT_RESPONSE_quickReplies" data-bot="true" class="message">
+                <div class="bot-response quick-replies">
+                    <!-- <div class="chat-message">
+                        <span class="chat-message__avatar-frame">
+                        <img src="https://img.favpng.com/13/25/17/user-silhouette-png-favpng-YqJcrKvJQHL2wGemK2EvGfk26.jpg" alt="avatar" class="chat-message__avatar">
+                      </span>
+                        <p class="chat-message__text">Hi!</p>
+                    </div> -->
+                    <div class="quick-replies-buttons">
+                        <div data-conversation-quick-reply-title="⚡️ Free trial" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚡️ Free trial</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💲 Pricing" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💲 Pricing</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🧑‍💻 Contact Sales" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🧑‍💻 Contact Sales</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💡 About ChatBot" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💡 About ChatBot</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🚀 Features" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🚀 Features</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="⚙️  Integrations" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚙️  Integrations</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🤝 Partner Program" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🤝 Partner Program</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="📩  Contact us" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>📩  Contact us</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div data-type="BOT_RESPONSE_quickReplies" data-bot="true" class="message">
+                <div class="bot-response quick-replies">
+                    <!-- <div class="chat-message">
+                        <span class="chat-message__avatar-frame">
+                        <img src="https://img.favpng.com/13/25/17/user-silhouette-png-favpng-YqJcrKvJQHL2wGemK2EvGfk26.jpg" alt="avatar" class="chat-message__avatar">
+                      </span>
+                        <p class="chat-message__text">Hi!</p>
+                    </div> -->
+                    <div class="quick-replies-buttons">
+                        <div data-conversation-quick-reply-title="⚡️ Free trial" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚡️ Free trial</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💲 Pricing" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💲 Pricing</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🧑‍💻 Contact Sales" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🧑‍💻 Contact Sales</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💡 About ChatBot" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💡 About ChatBot</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🚀 Features" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🚀 Features</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="⚙️  Integrations" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚙️  Integrations</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🤝 Partner Program" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🤝 Partner Program</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="📩  Contact us" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>📩  Contact us</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div data-type="BOT_RESPONSE_quickReplies" data-bot="true" class="message">
+                <div class="bot-response quick-replies">
+                    <!-- <div class="chat-message">
+                        <span class="chat-message__avatar-frame">
+                        <img src="https://img.favpng.com/13/25/17/user-silhouette-png-favpng-YqJcrKvJQHL2wGemK2EvGfk26.jpg" alt="avatar" class="chat-message__avatar">
+                      </span>
+                        <p class="chat-message__text">Hi!</p>
+                    </div> -->
+                    <div class="quick-replies-buttons">
+                        <div data-conversation-quick-reply-title="⚡️ Free trial" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚡️ Free trial</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💲 Pricing" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💲 Pricing</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🧑‍💻 Contact Sales" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🧑‍💻 Contact Sales</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💡 About ChatBot" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💡 About ChatBot</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🚀 Features" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🚀 Features</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="⚙️  Integrations" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚙️  Integrations</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🤝 Partner Program" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🤝 Partner Program</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="📩  Contact us" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>📩  Contact us</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div data-type="BOT_RESPONSE_quickReplies" data-bot="true" class="message">
+                <div class="bot-response quick-replies">
+                    <!-- <div class="chat-message">
+                        <span class="chat-message__avatar-frame">
+                        <img src="https://img.favpng.com/13/25/17/user-silhouette-png-favpng-YqJcrKvJQHL2wGemK2EvGfk26.jpg" alt="avatar" class="chat-message__avatar">
+                      </span>
+                        <p class="chat-message__text">Hi!</p>
+                    </div> -->
+                    <div class="quick-replies-buttons">
+                        <div data-conversation-quick-reply-title="⚡️ Free trial" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚡️ Free trial</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💲 Pricing" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💲 Pricing</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🧑‍💻 Contact Sales" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🧑‍💻 Contact Sales</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💡 About ChatBot" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💡 About ChatBot</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🚀 Features" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🚀 Features</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="⚙️  Integrations" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚙️  Integrations</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🤝 Partner Program" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🤝 Partner Program</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="📩  Contact us" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>📩  Contact us</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div data-type="BOT_RESPONSE_quickReplies" data-bot="true" class="message">
+                <div class="bot-response quick-replies">
+                    <!-- <div class="chat-message">
+                        <span class="chat-message__avatar-frame">
+                        <img src="https://img.favpng.com/13/25/17/user-silhouette-png-favpng-YqJcrKvJQHL2wGemK2EvGfk26.jpg" alt="avatar" class="chat-message__avatar">
+                      </span>
+                        <p class="chat-message__text">Hi!</p>
+                    </div> -->
+                    <div class="quick-replies-buttons">
+                        <div data-conversation-quick-reply-title="⚡️ Free trial" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚡️ Free trial</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💲 Pricing" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💲 Pricing</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🧑‍💻 Contact Sales" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🧑‍💻 Contact Sales</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💡 About ChatBot" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💡 About ChatBot</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🚀 Features" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🚀 Features</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="⚙️  Integrations" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚙️  Integrations</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🤝 Partner Program" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🤝 Partner Program</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="📩  Contact us" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>📩  Contact us</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div data-type="BOT_RESPONSE_quickReplies" data-bot="true" class="message">
+                <div class="bot-response quick-replies">
+                    <!-- <div class="chat-message">
+                        <span class="chat-message__avatar-frame">
+                        <img src="https://img.favpng.com/13/25/17/user-silhouette-png-favpng-YqJcrKvJQHL2wGemK2EvGfk26.jpg" alt="avatar" class="chat-message__avatar">
+                      </span>
+                        <p class="chat-message__text">Hi!</p>
+                    </div> -->
+                    <div class="quick-replies-buttons">
+                        <div data-conversation-quick-reply-title="⚡️ Free trial" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚡️ Free trial</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💲 Pricing" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💲 Pricing</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🧑‍💻 Contact Sales" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🧑‍💻 Contact Sales</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💡 About ChatBot" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💡 About ChatBot</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🚀 Features" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🚀 Features</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="⚙️  Integrations" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚙️  Integrations</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🤝 Partner Program" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🤝 Partner Program</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="📩  Contact us" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>📩  Contact us</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div data-type="BOT_RESPONSE_quickReplies" data-bot="true" class="message">
+                <div class="bot-response quick-replies">
+                    <!-- <div class="chat-message">
+                        <span class="chat-message__avatar-frame">
+                        <img src="https://img.favpng.com/13/25/17/user-silhouette-png-favpng-YqJcrKvJQHL2wGemK2EvGfk26.jpg" alt="avatar" class="chat-message__avatar">
+                      </span>
+                        <p class="chat-message__text">Hi!</p>
+                    </div> -->
+                    <div class="quick-replies-buttons">
+                        <div data-conversation-quick-reply-title="⚡️ Free trial" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚡️ Free trial</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💲 Pricing" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💲 Pricing</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🧑‍💻 Contact Sales" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🧑‍💻 Contact Sales</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💡 About ChatBot" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💡 About ChatBot</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🚀 Features" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🚀 Features</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="⚙️  Integrations" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚙️  Integrations</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🤝 Partner Program" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🤝 Partner Program</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="📩  Contact us" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>📩  Contact us</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div data-type="BOT_RESPONSE_quickReplies" data-bot="true" class="message">
+                <div class="bot-response quick-replies">
+                    <!-- <div class="chat-message">
+                        <span class="chat-message__avatar-frame">
+                        <img src="https://img.favpng.com/13/25/17/user-silhouette-png-favpng-YqJcrKvJQHL2wGemK2EvGfk26.jpg" alt="avatar" class="chat-message__avatar">
+                      </span>
+                        <p class="chat-message__text">Hi!</p>
+                    </div> -->
+                    <div class="quick-replies-buttons">
+                        <div data-conversation-quick-reply-title="⚡️ Free trial" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚡️ Free trial</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💲 Pricing" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💲 Pricing</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🧑‍💻 Contact Sales" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🧑‍💻 Contact Sales</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💡 About ChatBot" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💡 About ChatBot</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🚀 Features" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🚀 Features</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="⚙️  Integrations" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚙️  Integrations</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🤝 Partner Program" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🤝 Partner Program</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="📩  Contact us" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>📩  Contact us</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div data-type="BOT_RESPONSE_quickReplies" data-bot="true" class="message">
+                <div class="bot-response quick-replies">
+                    <!-- <div class="chat-message">
+                        <span class="chat-message__avatar-frame">
+                        <img src="https://img.favpng.com/13/25/17/user-silhouette-png-favpng-YqJcrKvJQHL2wGemK2EvGfk26.jpg" alt="avatar" class="chat-message__avatar">
+                      </span>
+                        <p class="chat-message__text">Hi!</p>
+                    </div> -->
+                    <div class="quick-replies-buttons">
+                        <div data-conversation-quick-reply-title="⚡️ Free trial" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚡️ Free trial</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💲 Pricing" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💲 Pricing</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🧑‍💻 Contact Sales" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🧑‍💻 Contact Sales</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💡 About ChatBot" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💡 About ChatBot</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🚀 Features" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🚀 Features</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="⚙️  Integrations" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚙️  Integrations</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🤝 Partner Program" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🤝 Partner Program</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="📩  Contact us" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>📩  Contact us</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div data-type="BOT_RESPONSE_quickReplies" data-bot="true" class="message">
+                <div class="bot-response quick-replies">
+                    <!-- <div class="chat-message">
+                        <span class="chat-message__avatar-frame">
+                        <img src="https://img.favpng.com/13/25/17/user-silhouette-png-favpng-YqJcrKvJQHL2wGemK2EvGfk26.jpg" alt="avatar" class="chat-message__avatar">
+                      </span>
+                        <p class="chat-message__text">Hi!</p>
+                    </div> -->
+                    <div class="quick-replies-buttons">
+                        <div data-conversation-quick-reply-title="⚡️ Free trial" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚡️ Free trial</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💲 Pricing" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💲 Pricing</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🧑‍💻 Contact Sales" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🧑‍💻 Contact Sales</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💡 About ChatBot" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💡 About ChatBot</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🚀 Features" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🚀 Features</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="⚙️  Integrations" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚙️  Integrations</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🤝 Partner Program" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🤝 Partner Program</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="📩  Contact us" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>📩  Contact us</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div data-type="BOT_RESPONSE_quickReplies" data-bot="true" class="message">
+                <div class="bot-response quick-replies">
+                    <!-- <div class="chat-message">
+                        <span class="chat-message__avatar-frame">
+                        <img src="https://img.favpng.com/13/25/17/user-silhouette-png-favpng-YqJcrKvJQHL2wGemK2EvGfk26.jpg" alt="avatar" class="chat-message__avatar">
+                      </span>
+                        <p class="chat-message__text">Hi!</p>
+                    </div> -->
+                    <div class="quick-replies-buttons">
+                        <div data-conversation-quick-reply-title="⚡️ Free trial" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚡️ Free trial</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💲 Pricing" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💲 Pricing</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🧑‍💻 Contact Sales" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🧑‍💻 Contact Sales</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="💡 About ChatBot" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>💡 About ChatBot</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🚀 Features" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🚀 Features</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="⚙️  Integrations" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>⚙️  Integrations</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="🤝 Partner Program" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>🤝 Partner Program</span>
+                        </div>
+                        <div data-conversation-quick-reply-title="📩  Contact us" class="single-button" style="border-color: rgb(0, 102, 255); color: rgb(0, 102, 255); background: rgb(255, 255, 255);">
+                            <span>📩  Contact us</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+        <form class="chat-input-area">
+            <input type="text" placeholder="Write something..." class="chat-input-area__input">
+            <button type="submit" class="chat-input-area__submit-button"></button>
+        </form>
+    </section>
+    <script type="module" src="./script.js"></script>
+
+</body>
+
+</html>
